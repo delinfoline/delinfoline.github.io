@@ -1,0 +1,1336 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:500,700&display=swap');
+
+/*CSS Format*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS Rest
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+/*Setting Body*/
+body {
+    font-size: 16px;
+    background-color: #101119;
+    color: navajowhite;
+}
+
+h2,
+h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+
+/*Setting Navigation bar*/
+
+/*Awal Setting logo*/
+
+.main-nav {
+    height: 130px;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #383833;
+}
+
+.nav-logo {
+    height: 100%;
+    padding: 10px 15px;
+    display: flex;
+}
+
+.nav-logo .center-box {
+    margin: auto;
+
+}
+
+.nav-logo h1 {
+    font-family: Averia Sans Libre;
+    font-size: 35px;
+    background: linear-gradient(to right, #eed29f 10%, #ff4500 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-logo h1 a {
+    text-decoration: none;
+}
+
+.nav-logo img {
+    width: 4em;
+    height: 4em;
+    margin: auto;
+}
+
+/*Akhir Setting logo*/
+
+
+/*Settign main nav*/
+
+.nav-menu {
+    width: 65%;
+    height: inherit;
+    padding: 0px 15px;
+}
+
+.nav-menu .ulnav {
+    display: flex;
+    height: inherit;
+}
+
+.ulnav .center-box:first-child {
+    border-left: 1px solid #383833;
+}
+
+.ulnav .center-box {
+    display: flex;
+    flex: 1;
+    height: inherit;
+    border-right: 1px solid #383833;
+}
+
+.ulnav .center-box a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.nav-menu .ulnav li img {
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.nav-menu .ulnav li a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: auto;
+    transition: 100ms;
+    /*1000ms = 1s*/
+}
+
+.nav-menu .ulnav li a:hover {
+    filter: invert(17%) sepia(51%) saturate(287%) hue-rotate(326deg) brightness(104%) contrast(97%);
+    transform: scale(1.1);
+}
+
+/*Akhir Settign main nav*/
+
+/*Abia*/
+/*popup login*/
+.login-button{
+    background-color: transparent;
+    border: none;
+    color: #eed29f;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: arial;
+    transition: 0.4s;
+    padding-top: 5px;
+}
+
+.login-button:hover{
+    color: #eed29f;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-nav.nav-menu.ul-nav.center-box.logoutbutton{
+    display: none;
+}
+
+.popup-login{  
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.popup-login-isi{
+    height: 250px;
+    width: 500px;
+    background: #000000;
+    border-radius: 30px;
+    position: relative;
+    padding-top: 20px;
+}
+
+input{
+    margin: 10px auto;
+    display: block;
+    width: 50%;
+    padding: 9px;
+    border: 1px solid gray;
+    
+}
+
+.close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+/*style registrasi*/
+.registrarion-page-body{
+    position: absolute;
+    align-items: center;
+}
+
+.registration-form{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 200px;
+    text-align: center;
+    margin-left: 25%;
+ }
+.regis-header{
+    position: relative;
+    font-family: arial;
+}
+.register-button{
+    background-color: #eed29f;
+    border: none;
+    color: black;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: arial;
+    transition: 0.4s;
+}
+.register-button:hover{
+    background:  #eed29f;
+    color:  black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*style registrasi    background-color: #FF0000;
+    padding: 10 px 15px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 25px;
+    align-items: center;
+    font-family: arial;
+    display: inline-block; */
+
+
+
+
+
+
+/*Setting search box*/
+
+.searchBox {
+    background: rgb(246, 238, 218);
+    height: 57px;
+    border-radius: 40px;
+    padding: 8.5px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.searchBox:focus-within>.searchInput {
+    width: 10em;
+    padding: 0 6px;
+}
+
+.searchBox:focus-within>.searchButton {
+    background: rgb(255, 222, 173);
+    color: #2f3640;
+}
+
+.searchButton {
+    color: #e16f6f;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(214, 214, 188, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #21211c;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+/*Akhir Setting search box*/
+
+/*Setting Main Contents*/
+
+.opening {
+    width: 100%;
+    height: 600px;
+    background: url(image/images/image5.jpg) no-repeat center center fixed;
+    background-size: cover;
+    filter: opacity(0.9);
+}
+
+.container {
+    width: 800px;
+    height: 200px;
+    top: 50%;
+    left: 150px;
+    position: relative;
+    background: rgba(36, 36, 30, 0.502);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.container .pers {
+    width: 90%;
+    height: 100px;
+    margin: 20px auto;
+    font: 600 45px 'Comfortaa', cursive;
+    color: white;
+}
+
+.container .button {
+    width: 250px;
+    height: 45px;
+    border-radius: 30px;
+    margin: 0 0 0 40px;
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.727);
+    color: aliceblue;
+    font-weight: 750;
+    transition: .2s;
+}
+
+
+.container .button:hover {
+    background-color: navajowhite;
+    color: black;
+    font-size: 15px;
+    border-color: #7a7a7a;
+}
+
+
+/*Setting awal article*/
+.article {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.container-news .news {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.container-news .news .image-box {
+    border-bottom: .1px solid #383833;
+}
+
+.container-news .news .image-box.large {
+    flex: 1.8;
+}
+
+.container-news .news .image-box.image {
+    display: flex;
+    flex: 1.3;
+    background-image: url(image/images/Image-2.JPG);
+    background-size: cover;
+    background-position: -10px 0;
+    background-repeat: no-repeat;
+}
+
+.container-news .news .image-box.image.dua {
+    background-image: url(image/images/Image-3.JPG);
+    background-position: -50px 0;
+}
+
+.container-news .news .image-box.large.dua {
+    order: 2;
+}
+
+.news .image-box .news-article {
+    width: 650px;
+    height: 150px;
+    margin: 125px 0 0 80px;
+}
+
+.news .image-box .news-article h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.news .image-box .news-article h2 a {
+    color: #ff4500;
+    text-decoration: none;
+
+}
+
+.news .image-box .news-article h2 a:hover {
+    text-decoration: underline;
+}
+
+
+.news .image-box .news-article p {
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+.news .image-box .container-text .text {
+    padding: 30px;
+    transition: .2s;
+}
+
+.news .image-box.image h2 {
+    margin: auto;
+    font-size: 18px;
+    text-decoration: none;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+.news .image-box.image .text a {
+    font-size: 20px;
+    color: #ff4500;
+    text-decoration: none;
+}
+
+.news .image-box.image h2:hover {
+    font-size: 20px;
+}
+
+.news .image-box .container-text {
+    align-self: flex-end;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.845);
+    border-radius: 30px;
+    display: flex;
+}
+
+.news .image-box .container-text .text-dua {
+    margin: auto;
+    padding: 30px;
+    transition: .2s;
+}
+
+.news .image-box .container-text .text-dua a {
+    text-decoration: none;
+    color: #ff4500;
+}
+
+.news .image-box.large.dua {
+    display: flex;
+}
+
+.news .image-box.large.dua .news-articledua {
+    height: 45%;
+    width: 100%;
+    align-self: center;
+    margin: 10px;
+    padding: 0px 50px 0px 80px;
+}
+
+.news .image-box.large.dua .news-articledua h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+}
+
+.news .image-box.large.dua .news-articledua h2 a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+.news .image-box.large.dua .news-articledua h2 a:hover {
+    text-decoration: underline;
+}
+
+.news .image-box.large.dua .news-articledua p {
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+/*Akhir Setting Main Contents*/
+
+/*Setting Profil Contents*/
+
+.profile {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.profile .pf-box.satu {
+    flex: 2;
+}
+
+.profile .pf-box.dua {
+    flex: 1.8;
+    display: flex;
+}
+
+/*Left side content*/
+.profile .pf-box.satu .pf-textBox {
+    width: 80%;
+    margin: 60px auto 20px;
+}
+
+.profile .pf-box.satu .pf-textBox h1 {
+    margin: 0px 0px 30px 0px;
+    font-family: Averia Sans Libre;
+    font-size: 45px;
+    letter-spacing: -1px;
+    text-align: center;
+    font-weight: 500;
+    background: linear-gradient(to right, #eed29f 10%, #ff4500 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile .pf-box.satu .pf-textBox p {
+    width: 600px;
+    font-size: 19px;
+    color: #f2f2f2;
+    word-spacing: 3px;
+}
+
+.profile .pf-box.satu .pf-textBox .logo {
+    color: #ff4500;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    font-size: 25px;
+    background: linear-gradient(to right, #eed29f 10%, #ff4500 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile .pf-box.satu .pf-textBox .slogan {
+    font-size: 18px;
+    margin: 19px auto;
+    font-weight: 100;
+}
+
+/* Akhir Left side content*/
+
+/* Right side content*/
+.profile .pf-box.dua .pf-boxRa {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    border-radius: 21px;
+    box-shadow: 30px 30px 59px #0e0e15,
+        -30px -30px 59px #12141d;
+}
+
+.profile .pf-box.dua .pf-boxRa .image-Box {
+    height: 98%;
+    width: 98%;
+    background: linear-gradient(-90deg, transparent, 20%, #101119), url(image/images/image7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 21px;
+}
+
+.profile .pf-box.satu .soc-ico {
+    display: flex;
+}
+
+.profile .pf-box.satu .soc-ico .soc-icoContainer {
+    margin: 10px 0 0 65px;
+}
+
+.profile .pf-box.satu .fa {
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    padding: 9px;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.fa:hover {
+    transform: scale(1.4);
+    opacity: 0.7;
+    background: linear-gradient(to right, #eed29f 10%, #ff4500 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-youtube,
+.fa-facebook,
+.fa-google,
+.fa-instagram,
+.fa-github,
+.fa-linkedin {
+    background: linear-gradient(to right, #eed29f 10%, #ff4500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/*-----------------------------------------------------------------
+Akhir Setting Profil Contents
+-----------------------------------------------------------------*/
+
+
+/*
+-----------------------------------------------------------------
+Setting Card Course
+-----------------------------------------------------------------*/
+
+
+.cardcourse {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.cardcourse .cardcourseContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.cardcourse .cardcourse-box {
+    flex: 1;
+    display: flex;
+}
+
+.cardcourse .cardcourse-box.list {
+    flex-grow: 2.5;
+    display: flex;
+}
+
+/*Panel Sebelah Kiri*/
+.cardcourse .cardcourse-box .del-course {
+    display: flex;
+    width: 70%;
+    height: 95%;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 8px 8px 22px #0b0b11,
+        -8px -8px 22px #151722;
+}
+
+.cardcourse .cardcourse-box .del-course .del-courseHeader {
+    width: 70%;
+    height: 35%;
+    margin: 60px auto;
+    box-sizing: border-box;
+    border-radius: 5%;
+    box-shadow: 8px 8px 22px #0b0b11,
+        -8px -8px 22px #151722;
+}
+
+.cardcourse .cardcourse-box .del-course .del-courseHeader .meta {
+    margin: 20px;
+    margin-bottom: 40px;
+    line-height: 35px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.cardcourse .cardcourse-box .del-course .del-courseHeader p {
+    color: #ea6500;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------
+Akhir Panel Sebelah Kiri
+-----------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+Panel Sebalah Kanan
+------------------------------------------------------------------*/
+.cardcourse .cardcourse-box .del-course-list {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 95%;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 8px 8px 22px #0b0b11,
+        -8px -8px 22px #151722;
+}
+
+.cardcourse .cardcourse-box .del-course-list .del-courseHeader {
+    width: 80%;
+    height: 45%;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+}
+
+.cardcourse .cardcourse-box .del-course-list .del-courseHeader p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #ea6500;
+}
+
+.cardcourse .cardcourse-box .del-course-list .del-courseHeader h2 {
+    margin: 40px auto 0px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
+
+}
+
+.cardcourse .cardcourse-box .del-course-list .del-courseHeader .term {
+    margin-top: 10px;
+    color: #b8a5a2;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: .1px;
+}
+
+/*----------------------------------------------------------------
+Setting course meta position
+----------------------------------------------------------------*/
+
+.cardcourse .cardcourse-box .del-course-list .del-course-meta {
+    width: 80%;
+    height: 25%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-areas: "photo author"
+        "photo name"
+        "relate-link relate-link";
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    margin-top: 90px;
+}
+
+.cardcourse .cardcourseContainer .cardcourse-box .del-course-list .del-course-meta .photo {
+    grid-area: photo;
+}
+
+.cardcourse .cardcourseContainer .cardcourse-box .del-course-list .del-course-meta .photo .photo-cover {
+    width: 4.5em;
+    height: 4.5em;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url(image/Author/Sahid.png);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+
+.cardcourse .cardcourseContainer .cardcourse-box .del-course-list .del-course-meta .author>p {
+    grid-area: author;
+    margin: .5em 0 0.5em 1em;
+    font-family: 'Yantramanav',
+        sans-serif;
+    color: rgb(68, 67, 67);
+    font-weight: 600;
+    letter-spacing: .18em;
+
+}
+
+.cardcourse .cardcourseContainer .cardcourse-box .del-course-list .del-course-meta .name {
+    grid-area: name;
+    margin: 0 0 0 1em;
+    font-size: 1em;
+
+}
+
+.cardcourse .cardcourseContainer .cardcourse-box .del-course-list .del-course-meta .relate-link {
+    grid-area: relate-link;
+    margin-top: 1em;
+    font-family: 'Open Sans Condensed',
+        sans-serif;
+    letter-spacing: 1px;
+    color: #ea6500;
+}
+
+/* ---------------------------------------------------------------
+Akhir Panel Sebalah Kanan
+ ---------------------------------------------------------------*/
+.cardcourse .cardcourseContainer .cardcourse-box.list .del-course-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------------------------------------------------------
+Akhir Setting Card COurse
+ ---------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------
+Setting team elite
+------------------------------------------------------------------*/
+.team {
+    height: 25em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: .5fr 2fr;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "team-header team-header team-header team-header team-header"
+        "team1 team2 team3 team4 team5"
+}
+
+.team .header {
+    grid-area: team-header;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    border-radius: 1em;
+    box-shadow: 23px 23px 45px #0e0e15,
+        -23px -23px 45px #12141d;
+    font-size: 1.8em;
+    transition: 0.5s;
+    text-decoration: underline rgb(233, 231, 172);
+}
+
+.team .team-list {
+    border-radius: 5%;
+    box-shadow: 8px 8px 22px #0b0b11,
+        -8px -8px 22px #151722;
+}
+
+/* First team */
+.team .team-list.one {
+    grid-area: team1;
+    display: grid;
+    grid-row-gap: .5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr .5fr .5fr;
+    grid-template-areas:
+        "img img img img"
+        "Info Info Info Info"
+        "ico ico ico ico";
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.team .team-list.one .imgBox {
+    width: 8em;
+    height: 8em;
+    grid-area: img;
+    background-image: url(image/Author/Rizky.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5em;
+    align-self: end;
+}
+
+.team .team-list.one .info,
+.team .team-list.one .info .post {
+    grid-area: Info;
+    text-align: center;
+    margin-top: .4em;
+}
+
+.team .team-list .info .name {
+    font-size: 1.2em;
+}
+
+.team .team-list .info .post {
+    color: #ea65004a;
+    font-weight: 600;
+}
+
+.team .team-list.one .ico {
+    grid-area: ico;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: .2em;
+}
+
+.team .team-list .ico .fa {
+    height: 1.5em;
+    width: 1.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+/* Akhir First team */
+
+/* Second team */
+.team .team-list.two {
+    grid-area: team2;
+    display: grid;
+    grid-row-gap: .5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr .5fr .5fr;
+    grid-template-areas: "img img img img"
+        "Info Info Info Info"
+        "ico ico ico ico";
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.team .team-list.two .imgBox {
+    width: 8em;
+    height: 8em;
+    grid-area: img;
+    background-image: url(image/Author/Harry.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5em;
+    align-self: end;
+}
+
+.team .team-list.two .info,
+.team .team-list.two .info .post {
+    grid-area: Info;
+    text-align: center;
+    margin-top: .4em;
+}
+
+.team .team-list .info .name {
+    font-size: 1.2em;
+}
+
+.team .team-list .info .post {
+    color: #ea65004a;
+    font-weight: 600;
+}
+
+.team .team-list.two .ico {
+    grid-area: ico;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: .2em;
+}
+
+.team .team-list .ico .fa {
+    height: 1.5em;
+    width: 1.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+/* Akhir second team */
+
+/* third team */
+.team .team-list.three {
+    grid-area: team3;
+    display: grid;
+    grid-row-gap: .5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr .5fr .5fr;
+    grid-template-areas: "img img img img"
+        "Info Info Info Info"
+        "ico ico ico ico";
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.team .team-list.three .imgBox {
+    width: 8em;
+    height: 8em;
+    grid-area: img;
+    background-image: url(image/Author/Sahid.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5em;
+    align-self: end;
+}
+
+.team .team-list.three .info,
+.team .team-list.three .info .post {
+    grid-area: Info;
+    text-align: center;
+    margin-top: .4em;
+}
+
+.team .team-list .info .name {
+    font-size: 1.2em;
+}
+
+.team .team-list .info .post {
+    color: #ea65004a;
+    font-weight: 600;
+}
+
+.team .team-list.three .ico {
+    grid-area: ico;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: .2em;
+}
+
+.team .team-list .ico .fa {
+    height: 1.5em;
+    width: 1.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+/* Akhir third team */
+
+/* fourth team */
+.team .team-list.four {
+    grid-area: team4;
+    display: grid;
+    grid-row-gap: .5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr .5fr .5fr;
+    grid-template-areas: "img img img img"
+        "Info Info Info Info"
+        "ico ico ico ico";
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.team .team-list.four .imgBox {
+    width: 8em;
+    height: 8em;
+    grid-area: img;
+    background-image: url(image/Author/Andri.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5em;
+    align-self: end;
+}
+
+.team .team-list.four .info,
+.team .team-list.four .info .post {
+    grid-area: Info;
+    text-align: center;
+    margin-top: .4em;
+}
+
+.team .team-list .info .name {
+    font-size: 1.2em;
+}
+
+.team .team-list .info .post {
+    color: #ea65004a;
+    font-weight: 600;
+}
+
+.team .team-list.four .ico {
+    grid-area: ico;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: .2em;
+}
+
+.team .team-list .ico .fa {
+    height: 1.5em;
+    width: 1.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+/* akhir fourth team */
+
+/* fifth team */
+.team .team-list.five {
+    grid-area: team5;
+    display: grid;
+    grid-row-gap: .5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr .5fr .5fr;
+    grid-template-areas: "img img img img"
+        "Info Info Info Info"
+        "ico ico ico ico";
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+.team .team-list.five .imgBox {
+    width: 8em;
+    height: 8em;
+    grid-area: img;
+    background-image: url(image/Author/abia.jpg);
+    background-size: cover;
+    background-position: 10px 0;
+    border-radius: 5em;
+    align-self: end;
+}
+
+.team .team-list.five .info,
+.team .team-list.five .info .post {
+    grid-area: Info;
+    text-align: center;
+    margin-top: .4em;
+}
+
+.team .team-list .info .name {
+    font-size: 1.2em;
+}
+
+.team .team-list .info .post {
+    color: #ea65004a;
+    font-weight: 600;
+}
+
+.team .team-list.five .ico {
+    grid-area: ico;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: .2em;
+}
+
+.team .team-list .ico .fa {
+    height: 1.5em;
+    width: 1.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+/* Akhir fifth team */
+
+/* ---------------------------------------------------------------
+Akhir Setting team ellite
+------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------
+Setting footer
+------------------------------------------------------------------*/
+.footerglobal {
+    height: 450px;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 2fr .3fr;
+    grid-template-areas:
+        "logo deli course service career"
+        "copright copright copright copright copright";
+    border-top: 5px solid rgb(66, 66, 66);
+}
+
+/* Setting footer logo */
+.footerglobal .footer.logo {
+    grid-area: logo;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr .3fr 1fr;
+    grid-template-rows: 1fr .2fr 1fr;
+    grid-template-areas:
+        "logo logo logo"
+        "youtube github goog"
+        "face inst link";
+}
+
+.footerglobal .footer.logo .footer-logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+    width: 8em;
+    height: 8em;
+    margin-bottom: .5em;
+}
+
+.footerglobal .footer.logo .ico-container.youtb {
+    grid-area: youtube;
+    background-color: rgb(179, 169, 169);
+    justify-content: center;
+    align-content: center;
+    width: 3em;
+    height: 3em;
+    display: grid;
+    justify-self: end;
+}
+
+.footerglobal .footer.logo .ico-container.linked {
+    grid-area: link;
+    background-color: rgb(179, 169, 169);
+    justify-content: center;
+    align-content: center;
+    width: 3em;
+    height: 3em;
+    display: grid;
+}
+
+.footerglobal .footer.logo .ico-container.face {
+    grid-area: face;
+    background-color: rgb(179, 169, 169);
+    justify-content: center;
+    align-content: center;
+    width: 3em;
+    height: 3em;
+    display: grid;
+    justify-self: end;
+}
+
+.footerglobal .footer.logo .ico-container.inst {
+    grid-area: inst;
+    background-color: rgb(179, 169, 169);
+    justify-content: center;
+    align-content: center;
+    width: 3em;
+    height: 3em;
+    display: grid;
+}
+
+.footerglobal .footer.logo .ico-container.goog {
+    grid-area: goog;
+    background-color: rgb(179, 169, 169);
+    justify-content: center;
+    align-content: center;
+    width: 3em;
+    height: 3em;
+    display: grid;
+}
+
+.footerglobal .footer.logo .ico-container.github {
+    grid-area: github;
+    background-color: rgb(179, 169, 169);
+    justify-content: center;
+    align-content: center;
+    width: 3em;
+    height: 3em;
+    display: grid;
+}
+
+.footerglobal .footer.logo .ico-container .fa {
+    background: #221e1d;
+    -webkit-background-clip: text;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+.footerglobal .footer.logo .ico-container .fa:hover {
+    transform: none;
+}
+
+/* Akhir Setting footer logo */
+.footerglobal .footer h2 a {
+    color: rgb(82, 76, 76);
+    font-size: .9em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.footerglobal .footer a {
+    text-decoration: none;
+    color: rgb(87, 85, 85);
+}
+
+.footerglobal .footer p {
+    margin: 15px 0;
+}
+
+.footerglobal .footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(155, 212, 231);
+}
+
+.footerglobal .footer.delin {
+    grid-area: deli;
+    margin: 3em;
+    /* background-color: rgb(209, 114, 114); */
+
+}
+
+.footerglobal .footer.course {
+    grid-area: course;
+    margin: 3em;
+}
+
+.footerglobal .footer.service {
+    grid-area: service;
+    margin: 3em;
+}
+
+
+.footerglobal .footer.copright {
+    grid-area: copright;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(139, 137, 137, 0.564);
+    color: rgb(82, 76, 76);
+}
+
+
+/* ---------------------------------------------------------------
+Akhir Setting footer
+------------------------------------------------------------------*/

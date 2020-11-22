@@ -1,0 +1,3 @@
+Database name = u866654230_delinfoline	
+Database user = u866654230_delinfoline	
+Databse host = localhost
